@@ -16,7 +16,8 @@ body {
   width: 100%;
   min-width: 1440px;
   min-height: 7191px;
-  background: linear-gradient(190deg, #0E0E0E 12%, #EDEDED 86%);
+  background-color: black;
+  /* background: linear-gradient(190deg, #0E0E0E 12%, #EDEDED 86%); */
   overflow: hidden;
 }
 
@@ -307,7 +308,7 @@ body {
 .theme-card {
   position: absolute;
   top: 1616px;
-  left: 205px;
+  left: 170px;
   width: 1030px;
   height: 114px;
   background: rgba(100, 100, 100, 0.2);
@@ -351,7 +352,7 @@ body {
 .seminar-section {
   position: absolute;
   top: 1800px;
-  left: 285px;
+  left: 225px;
   width: 870px;
   animation: fade-in 1s 1s ease forwards;
   opacity: 0;
@@ -383,7 +384,7 @@ body {
   left: 0;
   width: 420px;
   font-family: 'League Spartan', Helvetica;
-  font-weight: 400;
+  font-weight: medium;
   color: white;
   font-size: 24px;
   text-align: center;
@@ -403,7 +404,7 @@ body {
 
 .speaker-img {
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 442px;
   width: 460px;
   height: 613px;
@@ -433,7 +434,7 @@ body {
 .cta-button {
   position: absolute;
   top: 2209px;
-  left: 309px;
+  left: 255px;
   width: 356px;
   height: 50px;
   background: #052659;
