@@ -1,0 +1,7 @@
+body{
+    background-color: white;
+}
+
+.background_color{
+    background: linear-gradient(180deg, black, white);
+}
