@@ -109,10 +109,10 @@ body {
 
 .hero-main-img {
   position: absolute;
-  top: 250px;
-  left: 281px;
-  width: 743px;
-  height: 668px;
+  top: 370px;
+  left: 381px;
+  width: 543px;
+  height: 468px;
   object-fit: cover;
 }
 
@@ -145,8 +145,8 @@ body {
 
 .hero-title {
   position: absolute;
-  top: 402px;
-  left: 397px;
+  top: 160px;
+  left: 330px;
   font-family: 'League Spartan', Helvetica;
   font-weight: 400;
   font-size: 96px;
@@ -531,7 +531,7 @@ color: #FFD65C;
   gap: 40px;
   padding: 0 20px;
   transform: translateX(0);
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .carousel-item {
@@ -545,6 +545,8 @@ color: #FFD65C;
   transition: all 0.3s ease-in-out;
   border: 2px solid transparent;
   cursor: pointer;
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 
 .carousel-item img {
@@ -563,10 +565,12 @@ color: #FFD65C;
 
 .carousel-item:hover {
   transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .carousel-item.active {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 .carousel-btn {
@@ -815,14 +819,12 @@ color: #FFD65C;
   opacity: 0;
 }
 
-.sponsorship-circle {
+.sponsorship-circle img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 420px;
-  height: 420px;
-  background: #d9d9d9;
-  border-radius: 210px;
+  width: 430px;
+  height: 430px;
 }
 
 .sponsorship-title {

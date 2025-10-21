@@ -25,7 +25,7 @@
       
       let currentIndex = 0;
       const itemWidth = 376; // Width + gap
-      const offset = (container.offsetWidth - itemWidth) / 2;
+      const offset = (container.offsetWidth - itemWidth) / 1.5; // Adjusted for better right alignment
       
       // Set initial active state
       items[currentIndex].classList.add('active');
@@ -34,13 +34,18 @@
         const translateX = offset - (currentIndex * itemWidth);
         carousel.style.transform = `translateX(${translateX}px)`;
         
-        // Update active states
+        // Update active states with more dramatic scaling
         items.forEach((item, index) => {
           item.classList.remove('active');
-          item.style.opacity = index === currentIndex ? '1' : '0.5';
-          item.style.transform = index === currentIndex ? 'scale(1)' : 'scale(0.9)';
+          if (index === currentIndex) {
+            item.classList.add('active');
+            item.style.transform = 'scale(1.2)';
+            item.style.opacity = '1';
+          } else {
+            item.style.transform = 'scale(0.9)';
+            item.style.opacity = '0.5';
+          }
         });
-        items[currentIndex].classList.add('active');
 
         // Enable/disable buttons based on position
         prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
@@ -90,10 +95,10 @@
       <div class="hero-year"><img src="assets/2025.png" alt=""></div>
       <div class="hero-year2"><img src="assets/2025U.png" alt=""></div>
       <img class="hero-main-img" src="assets/Hand.png" alt="VALTER">
-      <img class="hero-main-img" src="assets/LightY.png" alt="VALTER">
+      <!-- <img class="hero-main-img" src="assets/LightY.png" alt="VALTER"> -->
       <div class="hero-year-gradient"></div>
       <!-- <div class="hero-glow"></div> -->
-      <div class="hero-title"><img src="assets/VALTER.png" alt=""></div>
+      <div class="hero-title"><img height="600px" width="600px" src="assets/MValterM.png" alt=""></div>
     </section>
     
     <button class="hero-arrow">
@@ -180,20 +185,20 @@
       <div class="carousel-container">
         <div class="carousel-slide">
           <div class="carousel-item">
-            <img src="assets/Hand.png" alt="Kegiatan 1">
+            <img src="assets/UIUX.png" alt="Kegiatan 1">
             <h3>Web Design</h3>
           </div>
           <div class="carousel-item">
-            <img src="assets/Hand.png" alt="Kegiatan 2">
+            <img src="assets/Kamera.png" alt="Kegiatan 2">
+            <h3>pelatihan</h3>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/ML.png" alt="Kegiatan 3">
             <h3>Esport</h3>
           </div>
           <div class="carousel-item">
-            <img src="assets/Hand.png" alt="Kegiatan 3">
+            <img src="assets/Campaign.png" alt="Kegiatan 4">
             <h3>Video Campaign</h3>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/Hand.png" alt="Kegiatan 4">
-            <h3>Content Creator</h3>
           </div>
         </div>
       </div>
@@ -248,7 +253,7 @@
 
     <!-- Sponsorship Section -->
     <section class="sponsorship-section">
-      <div class="sponsorship-circle"></div>
+      <div class="sponsorship-circle"><img src="assets/Telepon.png" alt=""></div>
       <div class="sponsorship-title">Open</div>
       <div class="sponsorship-subtitle">Sponsorship</div>
       <div class="sponsorship-contact-1">
