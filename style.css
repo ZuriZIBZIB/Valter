@@ -520,6 +520,7 @@ color: #FFD65C;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  perspective: 1000px;
 }
 
 .carousel-slide {
@@ -544,7 +545,9 @@ color: #FFD65C;
   transition: all 0.3s ease-in-out;
   border: 2px solid transparent;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.2;
+  transform: scale(0.8) translateX(-20px);
+  filter: blur(2px);
 }
 
 .carousel-item img {
@@ -571,13 +574,16 @@ color: #FFD65C;
 }
 
 .carousel-item:hover {
-  transform: scale(1.05);
-  opacity: 0.7;
+  transform: scale(0.9) translateX(0);
+  opacity: 0.6;
+  filter: blur(1px);
 }
 
 .carousel-item.active {
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(0);
   opacity: 1;
+  z-index: 5;
+  filter: blur(0);
 }
 
 .carousel-btn {
@@ -674,7 +680,7 @@ color: #FFD65C;
   position: absolute;
   font-family: 'League Spartan', Helvetica;
   font-weight: medium;
-  color: #ff7a00;
+  color: #ffd65c;
   font-size: 20px;
   text-align: center;
 }
@@ -733,6 +739,7 @@ color: #FFD65C;
   top: 358px;
   left: 178px;
   width: 194px;
+  font-size:15px;
 }
 
 .timeline-event-2 .timeline-dot {
@@ -758,6 +765,7 @@ color: #FFD65C;
   top: 645px;
   left: 658px;
   width: 194px;
+  font-size: 19px;
 }
 
 .timeline-event-3 .timeline-dot {
@@ -809,6 +817,7 @@ color: #FFD65C;
   top: 1208px;
   left: 658px;
   width: 194px;
+  font-size:19px;
 }
 
 .timeline-event-5 .timeline-dot {
@@ -836,14 +845,9 @@ color: #FFD65C;
 
 .sponsorship-title {
   position: absolute;
-  top: 79px;
-  left: 473px;
   width: 242px;
-  font-family: 'League Spartan', Helvetica;
-  font-weight: 700;
-  color: white;
-  font-size: 96px;
-  text-align: center;
+  top:-50px;
+  left:390px;
 }
 
 .sponsorship-subtitle {
@@ -879,7 +883,8 @@ color: #FFD65C;
 .contact-name {
   font-family: 'League Spartan', Helvetica;
   font-weight: 700;
-  color: #141414;
+  color: white;
+  background-clip: text;
   font-size: 40px;
   text-align: center;
 }
@@ -887,7 +892,7 @@ color: #FFD65C;
 .contact-phone {
   font-family: 'League Spartan', Helvetica;
   font-weight: 700;
-  color: #b0b0b0;
+  color: lightgray;
   font-size: 36px;
   text-align: center;
 }
@@ -935,6 +940,28 @@ color: #FFD65C;
   color: black;
 }
 
+.arah3{
+  position: absolute;
+  top:600px;
+  color: black;
+}
+
+.arah4{
+  position: absolute;
+  color: black;
+  top: -80px;
+  font-size: 24px;
+
+}
+
+.TivaRizz img{
+  position:absolute;
+  height:400px;
+  width:400px;
+  top:-288px;
+  left:100px;
+}
+
 /* Footer */
 .footer {
   position: relative;
@@ -945,13 +972,6 @@ color: #FFD65C;
   z-index: 1;
 }
 
-.TivaRizz img{
-  position:absolute;
-  height:400px;
-  width:400px;
-  top:-288px;
-  left:100px;
-}
 
 /* Animations */
 @keyframes fade-in {
