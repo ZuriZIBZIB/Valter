@@ -481,7 +481,7 @@ color: #FFD65C;
 .activities-card {
   position: absolute;
   top: 2451px;
-  left: 205px;
+  left: 160px;
   width: 1030px;
   height: 499px;
   background: rgba(100, 100, 100, 0.5);
@@ -494,7 +494,7 @@ color: #FFD65C;
 .carousel-section {
   position: absolute;
   top: 3252px;
-  left: 150px;
+  left: 100px;
   width: 1157px;
   height: 416px;
   animation: fade-in 1s 1.6s ease forwards;
@@ -559,7 +559,7 @@ color: #FFD65C;
 .timeline-section {
   position: absolute;
   top: 3821px;
-  left: 205px;
+  left: 165px;
   width: 1030px;
   animation: fade-in 1s 1.8s ease forwards;
   opacity: 0;
@@ -571,9 +571,14 @@ color: #FFD65C;
   left: 418px;
   width: 194px;
   font-family: 'League Spartan', Helvetica;
-  font-weight: 700;
-  color: #141414;
-  font-size: 36px;
+  font-weight: bold;
+  font-size: 40px;
+  color: transparent;
+  background-image: linear-gradient(90deg, #FFD65C, #FF7A00, #FFD65C);
+  background-clip: text;
+  text-shadow:
+    0 0 10px #FFB347,
+    0 0 40px #FF7A00;
   text-align: center;
 }
 
@@ -852,11 +857,12 @@ color: #FFD65C;
   font-weight: bold;
   left:475px;
   top: -150px;
-  color: #FF7A00;
+ color: #4C1775;
   text-shadow:
-    0 0 10px #FF7A00,
-    0 0 20px #FFB347,
-    0 0 80px #FF7A00;
+    0 0 5px #9D4EDD,
+    0 0 10px #BF74FF,
+    0 0 20px #E0AAFF,
+    0 0 40px #9D4EDD;
 }
 
 .Kegiatan2{
@@ -865,12 +871,10 @@ color: #FFD65C;
   font-weight: bold;
   left:490px;
   top: -100px;
-   color: #FFD65C;
+  color: #5483B3;
   text-shadow:
-    0 0 10px #FFD65C,
-    0 0 20px #FFE27C,
-    0 0 40px #FFE27C,
-    0 0 80px #FFD65C;
+    0 0 10px #72A9E0,
+    0 0 40px #72A9E0;
 }
 
 /* Animations */
