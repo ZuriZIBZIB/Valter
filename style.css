@@ -954,6 +954,15 @@ color: #FFD65C;
 
 }
 
+.alien{
+  position:absolute;
+  height:250px;
+  width:250px;
+  top:5550px;
+  left:550px;
+  
+}
+
 .TivaRizz img{
   position:absolute;
   height:400px;
