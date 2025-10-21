@@ -225,6 +225,69 @@ body {
   object-fit: cover;
 }
 
+.decorative-img-5 {
+  position: absolute;
+  top: 2000px;
+  left: 1200px;
+  width: 203px;
+  height: 203px;
+  object-fit: cover;
+}
+
+.decorative-img-6 {
+  position: absolute;
+  top: 2500px;
+  left: 50px;
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+}
+
+.decorative-img-7 {
+  position: absolute;
+  top: 3000px;
+  left: 1200px;
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+}
+
+.decorative-img-8 {
+  position: absolute;
+  top: 3500px;
+  left: 100px;
+  width: 103px;
+  height: 103px;
+  object-fit: cover;
+}
+
+.decorative-img-9 {
+  position: absolute;
+  top: 4000px;
+  left: 1200px;
+  width: 203px;
+  height: 203px;
+  object-fit: cover;
+}
+
+.decorative-img-10 {
+  position: absolute;
+  top: 4500px;
+  left: 200px;
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+}
+
+.decorative-img-11 {
+  position: absolute;
+  top: 5000px;
+  left: 1000px;
+  width: 552px;
+  height: 552px;
+  object-fit: cover;
+}
+
 /* About Section */
 .about-section {
   position: absolute;
@@ -490,13 +553,58 @@ color: #FFD65C;
 .activities-card {
   position: absolute;
   top: 2451px;
-  left: 160px;
-  width: 1030px;
+  left: 20px;
+  width: 1300px;
   height: 499px;
-  background: rgba(100, 100, 100, 0.5);
+  background: #4C1775;
   border-radius: 25px;
+  transition: background 0.3s;
   animation: fade-in 1s 1.4s ease forwards;
   opacity: 0;
+}
+
+.activities-card:hover{
+  background: #3F1361;
+}
+
+.tonton{
+  position: absolute;
+  top:20px;
+  left:20px;
+  font-family: 'League Spartan', Helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+
+.aseli{
+  position: absolute;
+  top: 170px;
+  left:550px;
+  width:200px;
+  height:150px;
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.aseli:hover{
+  width: 210px;
+  height: 160px;
+}
+
+.play{
+  position: absolute;
+  top: 200px;
+  left:600px;
+  width:80px;
+  height:80px;
+  cursor: pointer;
+  transition: width 0.3s, height 0.3s;
+}
+
+.play{
+  width:90px;
+  height:90px;
 }
 
 /* Carousel Section */
@@ -900,7 +1008,7 @@ color: #FFD65C;
 
 .Kegiatan1{
   position: absolute;
-  left:425px;
+  left:565px;
   top:700px;
   font-size: 48px;
   font-weight: bold;
@@ -914,7 +1022,7 @@ color: #FFD65C;
 .Kegiatan2{
   position: absolute;
   top:750px;
-  left:440px;
+  left:580px;
   font-size: 48px;
   font-weight: bold;
   color: transparent;
@@ -958,9 +1066,9 @@ color: #FFD65C;
   position:absolute;
   height:250px;
   width:250px;
-  top:5550px;
-  left:550px;
-  
+  top:5720px;
+  left:50px;
+  transform: rotate(340deg);
 }
 
 .TivaRizz img{
@@ -975,12 +1083,140 @@ color: #FFD65C;
 .footer {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: auto;
+  min-height: 600px;
   margin-top: 6213px;
-  background: linear-gradient(180deg, rgba(237,237,237,1) 0%, gray 100%);
+  background: linear-gradient(180deg,  #052659, #021024);
   z-index: 1;
+  padding: 40px 0;
 }
 
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-gap: 40px;
+  margin-top: 120px;
+}
+
+.footer-description {
+  position: absolute;
+  top:190px;
+  left:480px;
+  font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  color: transparent;
+  background-image: linear-gradient(90deg, #e44100, #ff0000, #FFD65C);
+  background-clip: text;
+  text-shadow:
+    0 0 10px #FFB347,
+    0 0 40px #FF7A00;
+  font-weight: bold;
+}
+
+.judul{
+  position: absolute;
+  left: 525px;
+  top: -60px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+
+.footer-section h3 {
+  position: absolute;
+  color: #FFD65C;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 250px;
+}
+
+.footer-section ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  top: 300px;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+
+}
+
+.footer-section ul li a:hover {
+  color: #FFD65C;
+}
+
+
+.footer-contact {
+  margin-top: 20px;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  color: white;
+}
+
+.footer-contact h3 {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  color: #FFD65C;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.footer-social {
+  margin-top: 30px;
+}
+
+.footer-social h3{
+  position: absolute;
+  top: 250px;
+  left: 900px;
+  color: #FFD65C;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.footer-motto {
+  font-size: 18px;
+  color: #FFD65C;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.footer-copyright {
+  position: absolute;
+  left: 800px;
+  top: 20px;
+  color: white;
+}
+
+.bottom{
+  border-top: 1px solid #ffffff;
+  position: absolute;
+  top: 500px;
+  width: 1100px;
+}
 
 /* Animations */
 @keyframes fade-in {
